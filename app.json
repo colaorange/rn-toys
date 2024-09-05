@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "rn-toys",
+    "name": "RN-Toys",
     "slug": "rn-toys",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.colaorange.rnlab"
     },
     "web": {
       "bundler": "metro",
