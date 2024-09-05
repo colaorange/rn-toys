@@ -3,21 +3,21 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
+    "//.0": "",
     "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
     "start-android": "expo start --android",
     "start-ios": "expo start --ios",
     "start-web": "expo start --web",
+    "test": "jest --watchAll",
+    "lint": "expo lint",
     "//.1": "",
     "prebuild": "expo prebuild",
     "prebuild-clean": "expo prebuild --clean",
+    "//.2": "",
     "android": "expo run:android --device",
     "android-release": "expo run:android --device --variant release",
-    
-    "ios": "expo run:ios",
-
-    "test": "jest --watchAll",
-    "lint": "expo lint"
+    "//.3": "",
+    "ios": "expo run:ios"
   },
   "jest": {
     "preset": "jest-expo"
@@ -41,7 +41,8 @@
     "react-native-reanimated": "~3.10.1",
     "react-native-safe-area-context": "4.10.5",
     "react-native-screens": "3.31.1",
-    "react-native-web": "~0.19.10"
+    "react-native-web": "~0.19.10",
+    "expo-build-properties": "~0.12.5"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

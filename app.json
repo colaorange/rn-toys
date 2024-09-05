@@ -2,7 +2,7 @@
   "expo": {
     "name": "RN-Toys",
     "slug": "rn-toys",
-    "version": "1.0.0",
+    "version": "0.0.2",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -16,11 +16,12 @@
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.colaorange.rnlab"
+      "package": "com.colaorange.rntoys"
     },
     "web": {
       "bundler": "metro",
@@ -31,10 +32,18 @@
       [
         "expo-router",
         {
-          //https://docs.expo.dev/router/reference/src-directory/
-          //Changing the default root directory is highly discouraged. We will not accept bug reports regarding projects with custom root directories.
           "root": "./src/app"
-          // "root": "./src/app-example"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "newArchEnabled": true
+          },
+          "android": {
+            "newArchEnabled": true
+          }
         }
       ]
     ],
